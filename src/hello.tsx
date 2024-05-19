@@ -1,26 +1,25 @@
-import React, {useState} from 'react'
-import {Button, Modal} from 'antd';
+import { Button, Modal } from 'antd';
+import React, { useState } from 'react';
 
 export default function Hello() {
-  const [visible, setVisible] = useState(false);
+  const [open, setOpen] = useState(false);
   return <div>
-    <Button type="primary" onClick={() => setVisible(true)}>
+    <Button type="primary" onClick={() => setOpen(true)}>
       Open Modal
     </Button>
     <Modal
+      open={open}
       title="Basic Modal"
-      visible={visible}
       onOk={() => {
         console.log("### onOk")
-        setVisible(false)
+        setOpen(false)
       }}
       onCancel={() => {
         console.log("### onCancel")
-        setVisible(false)
+        setOpen(false)
       }}
     >
       <p>Some content</p>
-      <Hello/>
     </Modal>
   </div>
 };
