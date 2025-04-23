@@ -3,17 +3,17 @@
     "start": "parcel serve src/index.html --open --no-cache"
   },
   "devDependencies": {
-    "@types/react": "18.2.48",
-    "@types/react-dom": "18.2.18",
-    
-    "antd": "5.17.2",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.1",
+    "antd": "5.24.8",
     "parcel": "2.11.0",
     "process": "0.11.10",
     "scheduler": "0.23.0",
     "typescript": "5.3.3"
   },
   "dependencies": {
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "ahooks": "^3.8.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   }
 }
